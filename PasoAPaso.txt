@@ -1,0 +1,39 @@
+1. Hacer limpieza de archivos innecesarios.
+
+2. Instalar react router: npm install react-router-dom
+
+3. Crear la carpeta: src/routers
+
+4. Crear el componente de rutas: src/routers/AppRouter.js
+
+5. Crear la carpeta: src/pages
+
+6. Crear el componente: src/pages/AboutPage.js
+
+7. Crear el componente: src/pages/ContactPage.js
+
+8. Crear el componente: src/pages/DemoPage.js
+
+9. Crear el componente: src/pages/HomePage.js
+
+10. Crear el componente: src/pages/NotFoundPage.js
+
+11. Crear la carpeta: src/components
+
+12. Crear el componente: src/components/Navbar.js
+
+13. Instalar bootstrap: npm install react-bootstrap@next bootstrap@5.0.2
+
+14. Crear el componente: src/pages/StudentPage.js
+
+15. Crear el componente: src/pages/TeacherPage.js
+
+16. Crear el componente: src/pages/LoginPage.js
+
+17. Crear el componente: src/pages/RegisterPage.js
+
+18. Crear el componente: src/pages/DashboardPage.js
+
+19. Crear el componente: src/pages/SettingsPage.js
+
+20. Crear el componente de rutas: src/routers/PrivateRouter.js

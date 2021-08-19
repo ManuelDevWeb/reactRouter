@@ -8,9 +8,9 @@ const StoreContext = createContext();
 const StoreProvider = ({ children }) => {
     const [store, dispatch] = useReducer(storeReducer, initialStore)
     return (
-        <StoreProvider.Provider value={[store, dispatch]}>
+        <StoreContext.Provider value={[store, dispatch]}>
             {children}
-        </StoreProvider.Provider>
+        </StoreContext.Provider>
     )
 }
 

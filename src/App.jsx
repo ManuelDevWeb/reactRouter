@@ -3,18 +3,15 @@ import Menu from "./components/Menu";
 import Productos from "./components/Productos";
 import Footer from "./components/Footer";
 //Importando el Context
-import { UserProvider } from "./store/UserContext";
-import { ProductProvider } from "./store/ProductContext";
+import { StoreProvider } from "./store/StoreProvider";
 
 function App() {
   return (
     <div className="App">
-      <UserProvider>
-        <ProductProvider>
-          <Menu />
-          <Productos />
-        </ProductProvider>
-      </UserProvider>
+      <StoreProvider>
+        <Menu />
+        <Productos />
+      </StoreProvider>
       <Footer />
     </div>
   );

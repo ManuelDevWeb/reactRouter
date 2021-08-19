@@ -1,10 +1,26 @@
 import { useContext } from "react";
-import ProductContext from "../store/ProductContext";
+import StoreContext from "../store/StoreProvider";
+import { types } from "../store/StoreReducer";
 
 const Productos = () => {
     console.log("Products")
     //Accediendo a los valores del useContext
-    const { products } = useContext(ProductContext)
+    const [{ products }, dispatch] = useContext(StoreContext);
+
+    const handlerDeleteAll = () => {
+        //Dispatch permite actualizar el reducer
+        dispatch({
+            type: types.PRODUCT_DELETE_ALL
+        })
+    }
+
+    const handlerChange = () => {
+        dispatch({
+            type: types.PRODUCT_CHANGE,
+            payload: [{ id: 5, title: 'Product #5' }]
+        })
+    }
+
     return (
         <div>
             <h1>Productos</h1>
@@ -15,6 +31,8 @@ const Productos = () => {
                     ))
                 }
             </ul>
+            <button onClick={handlerDeleteAll}>DeleteAll</button>
+            <button onClick={handlerChange}>Change</button>
         </div>
     );
 }

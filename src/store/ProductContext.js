@@ -9,14 +9,12 @@ const initialState = [
 ];
 
 const ProductProvider = ({ children }) => {
-    const [products, setProducts] = useState(initialState)
+    const [products, setProducts] = useState(initialState);
     const data = { products };
     return (
-        <ProductContext.Provider value={data}>
-            {children}
-        </ProductContext.Provider>
-    )
-}
+        <ProductContext.Provider value={data}>{children}</ProductContext.Provider>
+    );
+};
 
-export { ProductProvider }
+export { ProductProvider };
 export default ProductContext;

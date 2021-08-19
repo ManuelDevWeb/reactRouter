@@ -38,7 +38,7 @@
 
 20. Crear el componente de rutas: src/routers/PrivateRouter.js
 
-** Trabajamos sobre la nueva rama para usar (ReactContext)
+** Trabajamos sobre la nueva rama para usar (useContext)
 
 21. Crear la rama git checkout -b react-context-useReduce
 
@@ -53,3 +53,9 @@
 26. Crear el archivo: src/store/UserContext.js
 
 27. Crear el archivo: src/store/ProductContext.js
+
+** Trabajamos sobre la nueva rama con (useRedux)
+
+28. Crear el archivo: src/store/StoreProvider.js
+
+29. Crear el archivo: src/store/StoreRedux.js

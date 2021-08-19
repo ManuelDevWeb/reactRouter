@@ -51,3 +51,5 @@
 25. Crear la carpeta: src/store
 
 26. Crear el archivo: src/store/UserContext.js
+
+27. Crear el archivo: src/store/ProductContext.js

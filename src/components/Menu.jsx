@@ -3,10 +3,9 @@ import { useContext } from "react";
 import UserContext from "../store/UserContext";
 
 const Menu = () => {
+    console.log("Menu")
     //Accediendo a los valores del useContext
     const { user, login, logout } = useContext(UserContext);
-
-    console.log("Menu");
     return (
         <div>
             <h1>Menu</h1>

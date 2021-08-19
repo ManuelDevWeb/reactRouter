@@ -8,7 +8,7 @@ const initialState = [
     { id: 3, title: "Product #3" },
 ];
 
-const ProductProvider = ({ childer }) => {
+const ProductProvider = ({ children }) => {
     const [products, setProducts] = useState(initialState)
     const data = { products };
     return (
